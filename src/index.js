@@ -20,8 +20,9 @@ export function array2bool(array, primaryKey) {
 export function array2item(array, primaryKey, getValue) {
     const map = {}
     if (typeof primaryKey === 'function' && typeof getValue === 'function') {
-      for (let item of array) {
-        map[primaryKey(item)] = getValue(item)
+      for (let index = 0, size = array.length; index < size; index += 1) {
+        const item = array[index]
+        map[primaryKey(item, index)] = getValue(item, index)
       }
       return map
     }
@@ -34,8 +35,9 @@ export function array2item(array, primaryKey, getValue) {
 
 export function array2children(array, cb) {
   const children = []
-  for (let item of array) {
-    children.push(...cb(item))
+  for (let index = 0, size = array.length; index < size; index += 1) {
+    const item = array[index]
+    children.push(...cb(item, index))
   }
   return children
 }
