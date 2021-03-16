@@ -28,6 +28,9 @@ array2bool(arr3)
 array2item(arr, 'id')
 // { 1: { id: 1, name: 'hjx'}, 2: { id: 2, name: 'enjoy' } }
 
+array2item(arr, item => item.id, item => item.name)
+// { 1: 'hjx', 2: 'enjoy' }
+
 const arr4 = [{
     id: 1,
     name: 'hjx',

@@ -17,8 +17,15 @@ export function array2bool(array, primaryKey) {
     return map
 }
 
-export function array2item(array, primaryKey) {
+export function array2item(array, primaryKey, getValue) {
     const map = {}
+    if (typeof primaryKey === 'function' && typeof getValue === 'function') {
+      for (let item of array) {
+        map[primaryKey(item)] = getValue(item)
+      }
+      return map
+    }
+
     for (let item of array) {
         map[item[primaryKey]] = item
     }

@@ -13,6 +13,7 @@ console.log(array2bool(arr2))
 console.log(array2bool(arr3))
 console.log(array2bool(arr, 'id'))
 console.log(array2item(arr, 'id'))
+console.log(array2item(arr, item => item.id, item => item.name))
 
 const arr4 = [{
   id: 1,
