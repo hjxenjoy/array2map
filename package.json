@@ -1,0 +1,25 @@
+{
+  "name": "array2",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/array2.umd.js",
+  "module": "./dist/array2.es.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/array2.es.js",
+      "require": "./dist/array2.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.3",
+    "vite": "^2.1.0"
+  }
+}
