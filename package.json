@@ -1,6 +1,6 @@
 {
   "name": "arr2map",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "transform array to map",
   "files": [
     "dist"
@@ -29,12 +29,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hjxenjoy/arr2map.git"
+    "url": "git+https://github.com/hjxenjoy/array2map.git"
   },
   "bugs": {
-    "url": "https://github.com/hjxenjoy/arr2map/issues"
+    "url": "https://github.com/hjxenjoy/array2map/issues"
   },
-  "homepage": "https://github.com/hjxenjoy/arr2map#readme",
+  "homepage": "https://github.com/hjxenjoy/array2map#readme",
   "github": {
     "release": true
   },
