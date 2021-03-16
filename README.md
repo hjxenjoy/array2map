@@ -31,6 +31,9 @@ array2item(arr, 'id')
 array2item(arr, item => item.id, item => item.name)
 // { 1: 'hjx', 2: 'enjoy' }
 
+array2item(arr3, item => `double-${item}`, item => item * 2)
+// { double-2: 4, double-5: 10 }
+
 const arr4 = [{
     id: 1,
     name: 'hjx',

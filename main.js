@@ -14,6 +14,7 @@ console.log(array2bool(arr3))
 console.log(array2bool(arr, 'id'))
 console.log(array2item(arr, 'id'))
 console.log(array2item(arr, item => item.id, item => item.name))
+console.log(array2item(arr3, item => `double-${item}`, item => item * 2))
 
 const arr4 = [{
   id: 1,
