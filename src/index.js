@@ -24,3 +24,11 @@ export function array2item(array, primaryKey) {
     }
     return map
 }
+
+export function array2children(array, cb) {
+  const children = []
+  for (let item of array) {
+    children.push(...cb(item))
+  }
+  return children
+}
