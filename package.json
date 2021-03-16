@@ -1,17 +1,17 @@
 {
-  "name": "array2map",
+  "name": "arr2map",
   "version": "1.0.0",
   "description": "transform array to map",
   "files": [
     "dist"
   ],
-  "main": "./dist/array2map.umd.js",
-  "module": "./dist/array2map.es.js",
+  "main": "./dist/arr2map.umd.js",
+  "module": "./dist/arr2map.es.js",
   "types": "./index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/array2map.es.js",
-      "require": "./dist/array2map.umd.js"
+      "import": "./dist/arr2map.es.js",
+      "require": "./dist/arr2map.umd.js"
     }
   },
   "scripts": {
@@ -26,12 +26,12 @@
   "keywords": ["array"],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hjxenjoy/array2map.git"
+    "url": "git+https://github.com/hjxenjoy/arr2map.git"
   },
   "bugs": {
-    "url": "https://github.com/hjxenjoy/array2map/issues"
+    "url": "https://github.com/hjxenjoy/arr2map/issues"
   },
-  "homepage": "https://github.com/hjxenjoy/array2map#readme",
+  "homepage": "https://github.com/hjxenjoy/arr2map#readme",
   "github": {
     "release": true
   },

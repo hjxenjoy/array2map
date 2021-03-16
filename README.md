@@ -1,14 +1,14 @@
-# array2map
+# arr2map
 
 ```sh
 # use npm
-npm install --save array2map
+npm install --save arr2map
 # use yarn
-yarn add array2map
+yarn add arr2map
 ```
 
 ```js
-import { array2map, array2bool } from 'array2map'
+import { array2item, array2bool } from 'arr2map'
 
 const arr = [{ id: 1, name: 'hjx' }, { id: 2, name: 'enjoy' }]
 const arr2 = ['a', 'b']

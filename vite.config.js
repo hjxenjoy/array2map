@@ -4,7 +4,7 @@ module.exports = {
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
-      name: 'array2map'
+      name: 'arr2map'
     },
     // rollupOptions: {
     //   external: ['vue'],
