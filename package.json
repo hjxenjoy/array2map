@@ -1,13 +1,13 @@
 {
   "name": "arr2map",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "transform array to map",
   "files": [
     "dist"
   ],
   "main": "./dist/arr2map.umd.js",
   "module": "./dist/arr2map.es.js",
-  "types": "./index.d.ts",
+  "types": "./dist/arr2map.d.ts",
   "exports": {
     ".": {
       "import": "./dist/arr2map.es.js",
@@ -18,7 +18,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && cp ./index.d.ts ./dist/arr2map.d.ts"
   },
   "devDependencies": {
     "vite": "^2.1.0"
