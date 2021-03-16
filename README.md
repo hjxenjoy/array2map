@@ -1,5 +1,7 @@
 # arr2map
 
+transform array to map / array
+
 ```sh
 # use npm
 npm install --save arr2map
